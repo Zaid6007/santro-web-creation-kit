@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LicencePro Advisory - Your Trusted RTO Partner in Bangalore</title>
+    <meta name="description" content="Fast & Legal RTO Services in Bangalore. Driving License, Vehicle Registration, RC Renewal & more. No hidden charges, expert guidance, doorstep assistance.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1b1e;
+            background-color: #fafafa;
+        }
+        
+        /* Design System Colors */
+        :root {
+            --gold: hsl(45, 100%, 60%);
+            --gold-light: hsl(48, 100%, 75%);
+            --gold-dark: hsl(42, 100%, 45%);
+            --dark: hsl(220, 20%, 8%);
+            --dark-light: hsl(220, 15%, 15%);
+            --dark-medium: hsl(220, 18%, 12%);
+            --background: hsl(0, 0%, 98%);
+            --muted: hsl(220, 15%, 95%);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        .section { padding: 5rem 0; }
+        .text-center { text-align: center; }
+        .text-gold { color: var(--gold); }
+        .bg-dark { background-color: var(--dark); }
+        .bg-gold { background-color: var(--gold); }
+        .bg-muted { background-color: var(--muted); }
+        
+        /* Typography */
+        .text-4xl { font-size: 2.25rem; font-weight: 700; }
+        .text-5xl { font-size: 3rem; font-weight: 700; }
+        .text-6xl { font-size: 3.75rem; font-weight: 700; }
+        .text-xl { font-size: 1.25rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-sm { font-size: 0.875rem; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        
+        /* Layout */
+        .grid { display: grid; gap: 2rem; }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        
+        /* Spacing */
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-16 { margin-bottom: 4rem; }
+        
+        /* Components */
+        .card {
+            background: white;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover { 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+        
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--dark);
+        }
+        .btn-primary:hover {
+            background-color: var(--gold-dark);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+        .btn-outline:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: var(--dark);
+            color: white;
+        }
+        .top-bar {
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            font-size: 0.875rem;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: var(--gold);
+        }
+        
+        /* Hero Styles */
+        .hero {
+            background: linear-gradient(135deg, var(--dark), var(--dark-light), var(--dark-medium));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        .trust-card {
+            background-color: var(--dark-light);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            text-align: center;
+            color: #d1d5db;
+        }
+        
+        /* Form Styles */
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            background-color: white;
+            font-size: 1rem;
+        }
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        /* Stats Styles */
+        .stat-card {
+            text-align: center;
+        }
+        .stat-icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Image Styles */
+        .hero-image {
+            max-width: 32rem;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+        }
+        .service-image {
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .text-6xl { font-size: 2.5rem; }
+            .text-5xl { font-size: 2rem; }
+            .hero-content { padding: 2rem 0; }
+            .section { padding: 3rem 0; }
+        }
+        
+        /* Utility Classes */
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+        .opacity-10 { opacity: 0.1; }
+        .opacity-5 { opacity: 0.05; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-2xl { border-radius: 1rem; }
+        .rounded-full { border-radius: 50%; }
+        .shadow-2xl { box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25); }
+        .blur-3xl { filter: blur(60px); }
+        .w-full { width: 100%; }
+        .h-auto { height: auto; }
+        .object-cover { object-fit: cover; }
+        .object-contain { object-fit: contain; }
+        .overflow-hidden { overflow: hidden; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="flex items-center justify-between py-2">
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="mail" class="text-gold" style="width: 16px; height: 16px;"></i>
+                            <span>info@licenceproadvisory.com</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="clock" class="text-gold" style="width: 16px; height: 16px;"></i>
+                            <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="phone" class="text-gold" style="width: 16px; height: 16px;"></i>
+                        <span class="font-semibold">For Assistance Call Us: +91 9513144363</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="container">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-4">
+                    <img src="public/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png" alt="LicencePro Advisory" style="height: 3rem; width: auto;">
+                    <div>
+                        <h1 class="text-xl font-bold text-gold">LICENCEPRO</h1>
+                        <p style="font-size: 0.75rem; color: #d1d5db;">ADVISORY</p>
+                    </div>
+                </div>
+
+                <nav class="flex items-center gap-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('src/assets/road-background.jpg');"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div style="position: absolute; top: 5rem; left: 2.5rem; color: var(--gold); font-size: 8rem;">◆</div>
+            <div style="position: absolute; top: 10rem; right: 5rem; color: var(--gold); font-size: 6rem;">◆</div>
+            <div style="position: absolute; bottom: 5rem; left: 25%; color: var(--gold); font-size: 4rem;">◆</div>
+        </div>
+
+        <div class="container hero-content py-20">
+            <div class="grid grid-2 gap-8 items-center">
+                <!-- Left Content -->
+                <div>
+                    <div class="flex items-center gap-2 text-gold mb-4">
+                        <i data-lucide="shield" style="width: 24px; height: 24px;"></i>
+                        <span class="text-sm font-semibold" style="letter-spacing: 0.1em; text-transform: uppercase;">Trusted RTO Services</span>
+                    </div>
+                    <h2 class="text-6xl font-bold mb-4" style="line-height: 1.1;">
+                        Bangalore's
+                        <span class="block text-gold">FINEST RTO</span>
+                        <span class="block">ADVISORY</span>
+                    </h2>
+                    <p class="text-xl mb-4" style="color: #d1d5db;">
+                        Your Trusted Partner for Hassle-Free RTO Services
+                    </p>
+                    <p class="text-lg mb-8" style="color: #9ca3af;">
+                        Fast & Legal Processing • No hidden charges • Expert Guidance • Transparent Pricing
+                    </p>
+
+                    <div class="flex gap-4 mb-8">
+                        <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                        <a href="#services" class="btn btn-outline">View Services</a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="grid grid-4 gap-4">
+                        <div class="trust-card card p-4">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 32px; height: 32px; margin: 0 auto 0.5rem;"></i>
+                            <p class="text-sm">Legal Processing</p>
+                        </div>
+                        <div class="trust-card card p-4">
+                            <i data-lucide="clock" class="text-gold" style="width: 32px; height: 32px; margin: 0 auto 0.5rem;"></i>
+                            <p class="text-sm">Fast Service</p>
+                        </div>
+                        <div class="trust-card card p-4">
+                            <i data-lucide="award" class="text-gold" style="width: 32px; height: 32px; margin: 0 auto 0.5rem;"></i>
+                            <p class="text-sm">Expert Guidance</p>
+                        </div>
+                        <div class="trust-card card p-4">
+                            <i data-lucide="shield" class="text-gold" style="width: 32px; height: 32px; margin: 0 auto 0.5rem;"></i>
+                            <p class="text-sm">No Hidden Charges</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Car Image -->
+                <div class="flex justify-center items-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-2xl blur-3xl" style="background-color: rgba(255, 215, 0, 0.2);"></div>
+                        <img src="src/assets/hero-car.jpg" alt="Professional Training Car" class="hero-image relative" style="z-index: 10;">
+                        <!-- Floating Logo -->
+                        <div class="absolute" style="top: 1rem; right: 1rem; background-color: rgba(20, 20, 28, 0.8); backdrop-filter: blur(8px); border-radius: 50%; padding: 0.75rem;">
+                            <img src="public/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png" alt="LicencePro Advisory Shield" style="width: 3rem; height: 3rem; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="btn" style="background-color: rgba(255, 215, 0, 0.1); color: var(--gold); border: 1px solid rgba(255, 215, 0, 0.2); margin-bottom: 1rem;">Our Services</div>
+                <h2 class="text-5xl font-bold mb-6">
+                    Comprehensive <span class="text-gold">RTO Services</span>
+                </h2>
+                <p class="text-xl" style="color: #6b7280; max-width: 48rem; margin: 0 auto;">
+                    From driving licenses to vehicle registration, we handle all your RTO needs with expertise and efficiency
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-2 gap-8 mb-16">
+                <!-- Driving License Services -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 rounded-lg bg-dark text-gold">
+                            <i data-lucide="car" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Driving Licence (DL) Services</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">New Driving Licence (Learner's & Permanent)</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Driving Licence Renewal</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Duplicate DL (Lost/Damaged)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">International Driving Permit (IDP)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vehicle Registration Services -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 rounded-lg bg-dark" style="color: #60a5fa;">
+                            <i data-lucide="file-text" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Vehicle Registration & RC Services</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">New Vehicle Registration</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">RC Renewal & Transfer of Ownership</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Duplicate RC (Lost/Damaged)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Hypothecation Removal (NOC for Loans)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fitness Certificates -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 rounded-lg bg-dark" style="color: #34d399;">
+                            <i data-lucide="shield" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Fitness Certificates</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Vehicle Fitness Certificate Renewal</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">PUC (Pollution Under Control) Certificate</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Services -->
+                <div class="card p-6">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="p-3 rounded-lg bg-dark" style="color: #a78bfa;">
+                            <i data-lucide="award" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Other RTO & Legal Services</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Change of Address in RC/DL</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Name Correction in Documents</span>
+                        </li>
+                        <li class="flex items-start gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">Smart Card Driving Licence & RC</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="color: #6b7280;">RTO Agent Support for Complex Cases</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="bg-dark rounded-2xl p-8 text-white relative overflow-hidden mb-16">
+                <!-- Background Images -->
+                <div class="absolute inset-0 opacity-5">
+                    <img src="src/assets/traffic-signs.jpg" alt="Traffic Signs" style="position: absolute; top: 0; left: 0; width: 10rem; height: 10rem; object-fit: cover;">
+                    <img src="src/assets/steering-wheel.jpg" alt="Steering Wheel" style="position: absolute; bottom: 0; right: 0; width: 8rem; height: 8rem; object-fit: cover; border-radius: 50%;">
+                </div>
+                
+                <div class="grid grid-2 gap-8 items-center relative" style="z-index: 10;">
+                    <div>
+                        <h3 class="text-4xl font-bold mb-6">
+                            Why Choose <span class="text-gold">LicencePro Advisory?</span>
+                        </h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li class="flex items-start gap-3 mb-4">
+                                <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                                <span class="text-lg">Fast & Legal Processing – No hidden charges</span>
+                            </li>
+                            <li class="flex items-start gap-3 mb-4">
+                                <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                                <span class="text-lg">Doorstep Assistance – Minimal visits to RTO</span>
+                            </li>
+                            <li class="flex items-start gap-3 mb-4">
+                                <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                                <span class="text-lg">Expert Guidance – Avoid rejections & delays</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                                <span class="text-lg">Transparent Pricing – No last-minute surprises</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="text-center p-8 rounded-2xl" style="background-color: rgba(255, 215, 0, 0.1); backdrop-filter: blur(8px);">
+                            <i data-lucide="users" class="text-gold" style="width: 64px; height: 64px; margin: 0 auto 1rem;"></i>
+                            <h4 class="text-2xl font-bold text-gold mb-2">1000+</h4>
+                            <p style="color: #d1d5db;">Happy Customers Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Gallery Section -->
+            <div class="grid grid-3 gap-8">
+                <div class="card overflow-hidden" style="border-color: rgba(255, 215, 0, 0.2);">
+                    <div class="relative">
+                        <img src="src/assets/driving-lesson.jpg" alt="Professional Driving Lessons" class="gallery-image">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(20, 20, 28, 0.8), transparent);"></div>
+                        <div class="absolute text-white" style="bottom: 1rem; left: 1rem;">
+                            <h4 class="font-bold">Expert Training</h4>
+                            <p class="text-sm">Professional driving instruction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card overflow-hidden" style="border-color: rgba(255, 215, 0, 0.2);">
+                    <div class="relative">
+                        <img src="src/assets/rto-documents.jpg" alt="RTO Documentation Services" class="gallery-image">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(20, 20, 28, 0.8), transparent);"></div>
+                        <div class="absolute text-white" style="bottom: 1rem; left: 1rem;">
+                            <h4 class="font-bold">Legal Documentation</h4>
+                            <p class="text-sm">All RTO paperwork handled</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card overflow-hidden" style="border-color: rgba(255, 215, 0, 0.2);">
+                    <div class="relative">
+                        <img src="src/assets/traffic-signs.jpg" alt="Traffic Rules & Signs" class="gallery-image">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(20, 20, 28, 0.8), transparent);"></div>
+                        <div class="absolute text-white" style="bottom: 1rem; left: 1rem;">
+                            <h4 class="font-bold">Traffic Rules</h4>
+                            <p class="text-sm">Complete road safety knowledge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driving Tips Section -->
+    <section class="section bg-muted">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="btn" style="background-color: rgba(255, 215, 0, 0.1); color: var(--gold); border: 1px solid rgba(255, 215, 0, 0.2); margin-bottom: 1rem;">Driving Tips & Safety</div>
+                <h2 class="text-5xl font-bold mb-6">
+                    Essential <span class="text-gold">Driving Knowledge</span>
+                </h2>
+                <p class="text-xl" style="color: #6b7280; max-width: 48rem; margin: 0 auto;">
+                    Master the fundamentals of safe driving with our expert guidance and comprehensive training
+                </p>
+            </div>
+
+            <div class="grid grid-2 gap-8 mb-16">
+                <!-- Traffic Signs -->
+                <div class="card overflow-hidden" style="border-color: rgba(255, 215, 0, 0.2);">
+                    <div class="relative">
+                        <img src="src/assets/traffic-signs.jpg" alt="Indian Traffic Signs" class="gallery-image">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(20, 20, 28, 0.8), transparent);"></div>
+                        <div class="absolute text-white" style="bottom: 1.5rem; left: 1.5rem;">
+                            <h3 class="text-2xl font-bold mb-2">Traffic Signs Mastery</h3>
+                            <p style="color: #e5e7eb;">Learn all essential Indian traffic signs and their meanings</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Steering Wheel -->
+                <div class="card overflow-hidden" style="border-color: rgba(255, 215, 0, 0.2);">
+                    <div class="relative">
+                        <img src="src/assets/steering-wheel.jpg" alt="Professional Driving Position" class="gallery-image">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(20, 20, 28, 0.8), transparent);"></div>
+                        <div class="absolute text-white" style="bottom: 1.5rem; left: 1.5rem;">
+                            <h3 class="text-2xl font-bold mb-2">Proper Driving Position</h3>
+                            <p style="color: #e5e7eb;">Master the correct posture and vehicle control techniques</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Driving Tips Grid -->
+            <div class="grid grid-4 gap-6 mb-16">
+                <div class="card text-center p-6">
+                    <div style="color: #f87171; margin-bottom: 1rem;">
+                        <i data-lucide="alert-triangle" style="width: 48px; height: 48px; margin: 0 auto;"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Traffic Signs</h4>
+                    <p class="text-sm" style="color: #6b7280; line-height: 1.6;">Always observe and follow traffic signs for safe driving</p>
+                </div>
+
+                <div class="card text-center p-6">
+                    <div style="color: #60a5fa; margin-bottom: 1rem;">
+                        <i data-lucide="car" style="width: 48px; height: 48px; margin: 0 auto;"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Vehicle Check</h4>
+                    <p class="text-sm" style="color: #6b7280; line-height: 1.6;">Regular maintenance ensures your vehicle stays roadworthy</p>
+                </div>
+
+                <div class="card text-center p-6">
+                    <div style="color: #34d399; margin-bottom: 1rem;">
+                        <i data-lucide="clock" style="width: 48px; height: 48px; margin: 0 auto;"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Speed Limits</h4>
+                    <p class="text-sm" style="color: #6b7280; line-height: 1.6;">Maintain appropriate speed according to road conditions</p>
+                </div>
+
+                <div class="card text-center p-6">
+                    <div class="text-gold" style="margin-bottom: 1rem;">
+                        <i data-lucide="shield" style="width: 48px; height: 48px; margin: 0 auto;"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3">Safety First</h4>
+                    <p class="text-sm" style="color: #6b7280; line-height: 1.6;">Always wear seatbelts and follow safety protocols</p>
+                </div>
+            </div>
+
+            <!-- Quick Tips Section -->
+            <div class="bg-dark rounded-2xl p-8 text-white relative overflow-hidden">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-5">
+                    <div class="absolute w-full h-full" style="background-image: url('src/assets/traffic-signs.jpg'); background-size: 200px 200px; background-repeat: repeat;"></div>
+                </div>
+                
+                <div class="relative" style="z-index: 10;">
+                    <h3 class="text-4xl font-bold mb-8 text-center">
+                        <span class="text-gold">Quick</span> Safety Reminders
+                    </h3>
+                    <div class="grid grid-3 gap-6">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Always Use Indicators</h4>
+                                <p class="text-sm" style="color: #d1d5db;">Signal your intentions clearly to other drivers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Maintain Safe Distance</h4>
+                                <p class="text-sm" style="color: #d1d5db;">Keep adequate space between vehicles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 24px; height: 24px; margin-top: 4px; flex-shrink: 0;"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Check Blind Spots</h4>
+                                <p class="text-sm" style="color: #d1d5db;">Always check mirrors before changing lanes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="btn" style="background-color: rgba(255, 215, 0, 0.1); color: var(--gold); border: 1px solid rgba(255, 215, 0, 0.2); margin-bottom: 1rem;">About LicencePro Advisory</div>
+                <h2 class="text-5xl font-bold mb-6">
+                    Your Trusted <span class="text-gold">RTO Partner</span>
+                </h2>
+                <p class="text-xl" style="color: #6b7280; max-width: 48rem; margin: 0 auto;">
+                    We are dedicated to making RTO services accessible, transparent, and hassle-free for everyone in Bangalore
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-4 gap-6 mb-16">
+                <div class="card text-center p-6 stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="users" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="stat-number">1000+</h3>
+                    <p style="color: #6b7280;">Happy Customers</p>
+                </div>
+
+                <div class="card text-center p-6 stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="award" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="stat-number">99%</h3>
+                    <p style="color: #6b7280;">Success Rate</p>
+                </div>
+
+                <div class="card text-center p-6 stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="clock" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="stat-number">24hrs</h3>
+                    <p style="color: #6b7280;">Quick Processing</p>
+                </div>
+
+                <div class="card text-center p-6 stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="shield" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h3 class="stat-number">100%</h3>
+                    <p style="color: #6b7280;">Legal Compliance</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="grid grid-2 gap-8 items-center mb-16">
+                <div>
+                    <h3 class="text-4xl font-bold mb-6">
+                        Simplifying RTO Services for <span class="text-gold">Bangalore</span>
+                    </h3>
+                    <p class="text-lg mb-6" style="color: #6b7280; line-height: 1.6;">
+                        LicencePro Advisory was founded with a simple mission: to eliminate the complexity and frustration 
+                        associated with RTO processes. We understand that dealing with government documentation can be 
+                        overwhelming, which is why we've dedicated ourselves to providing expert guidance and support 
+                        every step of the way.
+                    </p>
+                    <p class="text-lg mb-6" style="color: #6b7280; line-height: 1.6;">
+                        Our team of experienced professionals ensures that all your RTO needs are handled with utmost 
+                        care, transparency, and efficiency. From driving licenses to vehicle registration, we make sure 
+                        every process is completed legally and on time.
+                    </p>
+                    
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>Expert guidance from RTO professionals</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>100% legal and transparent processes</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>Doorstep assistance and minimal RTO visits</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>No hidden charges or last-minute surprises</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-2xl blur-3xl" style="background: linear-gradient(to right, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));"></div>
+                        <img src="src/assets/driving-lesson.jpg" alt="Professional RTO Services" class="relative rounded-2xl shadow-2xl" style="z-index: 10; width: 20rem; height: auto; object-fit: cover;">
+                        <!-- Overlay Logo -->
+                        <div class="absolute" style="top: 1rem; right: 1rem; background-color: rgba(20, 20, 28, 0.8); backdrop-filter: blur(8px); border-radius: 50%; padding: 0.5rem;">
+                            <img src="public/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png" alt="LicencePro Advisory" style="width: 2rem; height: 2rem; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="grid grid-3 gap-8">
+                <div class="card text-center p-6">
+                    <div class="stat-icon">
+                        <i data-lucide="target" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Our Mission</h4>
+                    <p style="color: #6b7280; line-height: 1.6;">To simplify RTO processes and provide hassle-free documentation services to every customer in Bangalore.</p>
+                </div>
+
+                <div class="card text-center p-6">
+                    <div class="stat-icon">
+                        <i data-lucide="shield" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Our Vision</h4>
+                    <p style="color: #6b7280; line-height: 1.6;">To become the most trusted RTO advisory service provider, known for transparency and excellence.</p>
+                </div>
+
+                <div class="card text-center p-6">
+                    <div class="stat-icon">
+                        <i data-lucide="award" class="text-gold" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Our Values</h4>
+                    <p style="color: #6b7280; line-height: 1.6;">Integrity, transparency, customer satisfaction, and legal compliance drive everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-muted">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6">
+                    Contact <span class="text-gold">Us</span>
+                </h2>
+                <p class="text-xl" style="color: #6b7280; max-width: 48rem; margin: 0 auto;">
+                    Get in touch with our RTO experts for hassle-free documentation services
+                </p>
+            </div>
+
+            <div class="grid grid-3 gap-8">
+                <!-- Contact Information -->
+                <div>
+                    <div class="card p-6 mb-6" style="border-color: rgba(255, 215, 0, 0.2);">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="phone" class="text-gold" style="width: 24px; height: 24px;"></i>
+                            <h3 class="text-xl font-bold">Phone</h3>
+                        </div>
+                        <p class="text-2xl font-bold text-gold mb-2">+91 9513144363</p>
+                        <p style="color: #6b7280;">Call us for immediate assistance</p>
+                    </div>
+
+                    <div class="card p-6 mb-6" style="border-color: rgba(255, 215, 0, 0.2);">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="mail" class="text-gold" style="width: 24px; height: 24px;"></i>
+                            <h3 class="text-xl font-bold">Email</h3>
+                        </div>
+                        <p class="font-semibold mb-2">info@licenceproadvisory.com</p>
+                        <p style="color: #6b7280;">Send us your queries</p>
+                    </div>
+
+                    <div class="card p-6 mb-6" style="border-color: rgba(255, 215, 0, 0.2);">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="map-pin" class="text-gold" style="width: 24px; height: 24px;"></i>
+                            <h3 class="text-xl font-bold">Location</h3>
+                        </div>
+                        <p class="font-semibold mb-2">Bangalore</p>
+                        <p style="color: #6b7280;">Karnataka, India</p>
+                    </div>
+
+                    <div class="card p-6" style="border-color: rgba(255, 215, 0, 0.2);">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="clock" class="text-gold" style="width: 24px; height: 24px;"></i>
+                            <h3 class="text-xl font-bold">Business Hours</h3>
+                        </div>
+                        <p class="font-semibold mb-2">Monday - Saturday</p>
+                        <p style="color: #6b7280;">9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div style="grid-column: span 2 / span 2;">
+                    <div class="card p-8" style="border-color: rgba(255, 215, 0, 0.2);">
+                        <h3 class="text-2xl font-bold mb-2">Get a Free Quote</h3>
+                        <p class="mb-6" style="color: #6b7280;">
+                            Fill out the form below and we'll get back to you within 24 hours
+                        </p>
+                        
+                        <form onsubmit="handleFormSubmit(event)">
+                            <div class="grid grid-2 gap-4 mb-6">
+                                <div>
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-input" placeholder="Enter your full name" required>
+                                </div>
+                                <div>
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-input" placeholder="Enter your phone number" required>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-2 gap-4 mb-6">
+                                <div>
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="Enter your email" required>
+                                </div>
+                                <div>
+                                    <label class="form-label">Service Required</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select a service</option>
+                                        <option value="driving-license">Driving License</option>
+                                        <option value="vehicle-registration">Vehicle Registration</option>
+                                        <option value="rc-renewal">RC Renewal</option>
+                                        <option value="fitness-certificate">Fitness Certificate</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-textarea" placeholder="Tell us about your requirements..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-full" style="padding: 0.75rem;">
+                                <i data-lucide="send" style="width: 20px; height: 20px; margin-right: 0.5rem;"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-20">
+            <div class="grid grid-4 gap-8">
+                <!-- Company Info -->
+                <div style="grid-column: span 2 / span 2;">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="shield" class="text-gold" style="width: 32px; height: 32px;"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gold">LICENCEPRO</h3>
+                            <p class="text-sm">ADVISORY</p>
+                        </div>
+                    </div>
+                    <p class="mb-6" style="color: #d1d5db; line-height: 1.6;">
+                        Your trusted partner for hassle-free RTO services in Bangalore. 
+                        We provide fast, legal, and transparent processing for all your 
+                        driving license and vehicle registration needs.
+                    </p>
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="phone" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>+91 9513144363</span>
+                        </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="mail" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>info@licenceproadvisory.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="map-pin" class="text-gold" style="width: 20px; height: 20px;"></i>
+                            <span>Bangalore, Karnataka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-gold">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="mb-3"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="mb-3"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="mb-3"><a href="#about" class="nav-link">About Us</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-gold">Our Services</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li class="mb-3 text-sm" style="color: #d1d5db;">Driving License Services</li>
+                        <li class="mb-3 text-sm" style="color: #d1d5db;">Vehicle Registration</li>
+                        <li class="mb-3 text-sm" style="color: #d1d5db;">RC Renewal</li>
+                        <li class="mb-3 text-sm" style="color: #d1d5db;">Fitness Certificates</li>
+                        <li class="text-sm" style="color: #d1d5db;">Document Correction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div style="border-top: 1px solid rgba(255, 215, 0, 0.2); margin-top: 3rem; padding-top: 2rem;">
+                <div class="flex items-center justify-between">
+                    <p class="text-sm" style="color: #d1d5db;">
+                        © 2024 LicencePro Advisory. All rights reserved.
+                    </p>
+                    <div class="flex gap-6 text-sm">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                        <a href="#" class="nav-link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+            event.target.reset();
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
