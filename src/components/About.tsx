@@ -1,6 +1,7 @@
 import { Shield, Award, Users, Clock, CheckCircle, Target } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import drivingLesson from "@/assets/driving-lesson.jpg";
 
 const About = () => {
   const stats = [
@@ -99,10 +100,18 @@ const About = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-gold/10 rounded-2xl blur-2xl"></div>
               <img 
-                src="/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png"
-                alt="LicencePro Advisory"
-                className="relative z-10 w-64 h-auto object-contain"
+                src={drivingLesson}
+                alt="Professional RTO Services"
+                className="relative z-10 w-80 h-auto object-cover rounded-2xl shadow-2xl"
               />
+              {/* Overlay Logo */}
+              <div className="absolute top-4 right-4 bg-dark/80 backdrop-blur-sm rounded-full p-2">
+                <img 
+                  src="/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png"
+                  alt="LicencePro Advisory"
+                  className="w-8 h-8 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

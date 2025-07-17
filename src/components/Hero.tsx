@@ -1,11 +1,19 @@
 import { Shield, CheckCircle, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import heroCar from "@/assets/hero-car.jpg";
+import roadBackground from "@/assets/road-background.jpg";
 
 const Hero = () => {
   return (
     <section id="home" className="relative bg-gradient-to-br from-dark via-dark-light to-dark-medium text-white overflow-hidden">
-      {/* Background Elements */}
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${roadBackground})` }}
+      />
+      
+      {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 text-gold text-8xl">◆</div>
         <div className="absolute top-40 right-20 text-gold text-6xl">◆</div>
@@ -64,15 +72,23 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Shield Logo */}
+          {/* Right Content - Car Image */}
           <div className="flex justify-center items-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gold/20 rounded-full blur-3xl"></div>
+              <div className="absolute inset-0 bg-gold/20 rounded-2xl blur-3xl"></div>
               <img 
-                src="/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png"
-                alt="LicencePro Advisory Shield"
-                className="relative z-10 w-80 h-auto object-contain drop-shadow-2xl"
+                src={heroCar}
+                alt="Professional Training Car"
+                className="relative z-10 w-full max-w-lg h-auto object-contain rounded-xl shadow-2xl"
               />
+              {/* Floating Logo */}
+              <div className="absolute top-4 right-4 bg-dark/80 backdrop-blur-sm rounded-full p-3">
+                <img 
+                  src="/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png"
+                  alt="LicencePro Advisory Shield"
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,10 @@
 import { Car, FileText, Shield, Award, CheckCircle, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import trafficSigns from "@/assets/traffic-signs.jpg";
+import drivingLesson from "@/assets/driving-lesson.jpg";
+import rtoDocuments from "@/assets/rto-documents.jpg";
+import steeringWheel from "@/assets/steering-wheel.jpg";
 
 const Services = () => {
   const serviceCategories = [
@@ -96,8 +100,22 @@ const Services = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className="bg-dark rounded-2xl p-8 lg:p-12 text-white">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="bg-dark rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden">
+          {/* Background Images */}
+          <div className="absolute inset-0 opacity-5">
+            <img 
+              src={trafficSigns} 
+              alt="Traffic Signs" 
+              className="absolute top-0 left-0 w-40 h-40 object-cover"
+            />
+            <img 
+              src={steeringWheel} 
+              alt="Steering Wheel" 
+              className="absolute bottom-0 right-0 w-32 h-32 object-cover rounded-full"
+            />
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-center relative z-10">
             <div>
               <h3 className="text-3xl font-bold mb-6">
                 Why Choose <span className="text-gold">LicencePro Advisory?</span>
@@ -112,13 +130,61 @@ const Services = () => {
               </ul>
             </div>
             <div className="flex justify-center">
-              <div className="bg-gold/10 rounded-2xl p-8 text-center">
+              <div className="bg-gold/10 rounded-2xl p-8 text-center backdrop-blur-sm">
                 <Users className="h-16 w-16 text-gold mx-auto mb-4" />
                 <h4 className="text-2xl font-bold text-gold mb-2">1000+</h4>
                 <p className="text-gray-300">Happy Customers Served</p>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Service Gallery Section */}
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <Card className="border-gold/20 overflow-hidden">
+            <div className="relative">
+              <img 
+                src={drivingLesson} 
+                alt="Professional Driving Lessons" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-bold">Expert Training</h4>
+                <p className="text-sm">Professional driving instruction</p>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="border-gold/20 overflow-hidden">
+            <div className="relative">
+              <img 
+                src={rtoDocuments} 
+                alt="RTO Documentation Services" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-bold">Legal Documentation</h4>
+                <p className="text-sm">All RTO paperwork handled</p>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="border-gold/20 overflow-hidden">
+            <div className="relative">
+              <img 
+                src={trafficSigns} 
+                alt="Traffic Rules & Signs" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="font-bold">Traffic Rules</h4>
+                <p className="text-sm">Complete road safety knowledge</p>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
