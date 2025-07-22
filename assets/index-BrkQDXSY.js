@@ -17085,13 +17085,14 @@ const Button = reactExports.forwardRef(
   }
 );
 Button.displayName = "Button";
+const logo = "/santro-web-creation-kit/assets/logo-rjMA9ZY-.png";
 const Header = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "bg-dark text-white", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border-b border-gold/20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row justify-between items-center py-2 text-sm", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-6 mb-2 md:mb-0", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "h-4 w-4 text-gold" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "info@licenceproadvisory.com" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "licenceproadvisory@gmail.com" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "h-4 w-4 text-gold" }),
@@ -17108,7 +17109,7 @@ const Header = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "img",
           {
-            src: "/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png",
+            src: logo,
             alt: "LicencePro Advisory",
             className: "h-12 w-auto"
           }
