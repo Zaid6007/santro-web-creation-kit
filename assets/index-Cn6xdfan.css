@@ -557,6 +557,11 @@ video {
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  .shiny-gold-bg {
+  background: linear-gradient(90deg, #FFD700, #FFA500, #FFEC8B, #FFD700);
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
+}
 .shiny-gold-text {
   background: linear-gradient(
     90deg,

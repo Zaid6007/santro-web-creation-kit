@@ -17124,7 +17124,7 @@ const Header = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#services", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "Services" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#about", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "About Us" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#contact", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "Contact" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { className: "bg-gold hover:bg-gold-dark text-dark font-semibold", children: "Get Quote" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { className: "shiny-gold-bg text-dark font-semibold", children: "Get Quote" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { variant: "ghost", className: "md:hidden shiny-gold-text", children: "☰" })
     ] }) })
@@ -17215,23 +17215,23 @@ const Hero = () => {
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-lg text-gray-400", children: "Fast & Legal Processing • No hidden charges • Expert Guidance • Transparent Pricing" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { size: "lg", className: "bg-gold hover:bg-gold-dark text-dark font-semibold px-8", children: "Get Started Today" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { size: "lg", className: "shiny-gold-bg text-dark font-semibold px-8", children: "Get Started Today" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { size: "lg", variant: "outline", className: "border-gold shiny-gold-text hover:bg-gold/10", children: "View Services" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4 pt-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold p-4 text-center", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheckBig, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Legal Processing" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold p-4 text-center", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Fast Service" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold p-4 text-center", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Expert Guidance" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold p-4 text-center", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Shield, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "No Hidden Charges" })
           ] })
