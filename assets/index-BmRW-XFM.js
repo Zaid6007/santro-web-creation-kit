@@ -17183,7 +17183,7 @@ const CardFooter = reactExports.forwardRef(({ className, ...props }, ref) => /* 
   }
 ));
 CardFooter.displayName = "CardFooter";
-const heroCar = "/santro-web-creation-kit/assets/Car-7wtX0UWn.png";
+const heroCar = "/santro-web-creation-kit/assets/Car-862xYFI6.png";
 const roadBackground = "/santro-web-creation-kit/assets/road-background-DNduGMQH.jpg";
 const Hero = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "home", className: "relative bg-gradient-to-br from-dark via-dark-light to-dark-medium text-white overflow-hidden", children: [
@@ -17289,10 +17289,9 @@ const Services = () => {
       title: "Driving Licence (DL) Services",
       color: "text-gold",
       services: [
-        "New Driving Licence (Learner's & Permanent)",
-        "Driving Licence Renewal",
-        "Duplicate DL (Lost/Damaged)",
-        "International Driving Permit (IDP)"
+        "Renewal: Extend the validity of your DL",
+        "Duplicate DL: Replace lost or damaged licences",
+        "IDP: International Driving Permit for foreign travel"
       ]
     },
     {
@@ -17300,10 +17299,11 @@ const Services = () => {
       title: "Vehicle Registration & RC Services",
       color: "text-blue-400",
       services: [
-        "New Vehicle Registration",
-        "RC Renewal & Transfer of Ownership",
-        "Duplicate RC (Lost/Damaged)",
-        "Hypothecation Removal (NOC for Loans)"
+        "New Registration: Register your new vehicle",
+        "RC Renewal: Renew your vehicle's Registration Certificate",
+        "Transfer Ownership: Change the owner of a vehicle",
+        "Duplicate RC: Replace lost or damaged RCs",
+        "NOC for Loans: Obtain a No Objection Certificate for loan clearance"
       ]
     },
     {
@@ -17311,8 +17311,8 @@ const Services = () => {
       title: "Fitness Certificates",
       color: "text-green-400",
       services: [
-        "Vehicle Fitness Certificate Renewal",
-        "PUC (Pollution Under Control) Certificate"
+        "PUC Certificate: Obtain a Pollution Under Control certificate",
+        "Vehicle Fitness: Renew your vehicle's fitness certificate"
       ]
     },
     {
@@ -17320,18 +17320,18 @@ const Services = () => {
       title: "Other RTO & Legal Services",
       color: "text-purple-400",
       services: [
-        "Change of Address in RC/DL",
-        "Name Correction in Documents",
-        "Smart Card Driving Licence & RC",
-        "RTO Agent Support for Complex Cases"
+        "Address Change: Update your address in RC/DL",
+        "Name Correction: Correct errors in your documents",
+        "Smart Card: Obtain smart card DL and RC",
+        "Complex Cases: Get support for complicated RTO issues"
       ]
     }
   ];
   const whyChooseUs = [
-    "Fast & Legal Processing – No hidden charges",
-    "Doorstep Assistance – Minimal visits to RTO",
-    "Expert Guidance – Avoid rejections & delays",
-    "Transparent Pricing – No last-minute surprises"
+    "Fast Processing: Quick and efficient service",
+    "Doorstep Assistance: Minimal visits to RTO",
+    "Expert Guidance: Avoid rejections and delays",
+    "Transparent Pricing: No hidden charges"
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsx("section", { id: "services", className: "py-20 bg-background", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
@@ -17586,7 +17586,7 @@ const About = () => {
         "Your Trusted ",
         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gold", children: "RTO Partner" })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl text-muted-foreground max-w-3xl mx-auto", children: "We are dedicated to making RTO services accessible, transparent, and hassle-free for everyone in Bangalore" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl text-muted-foreground max-w-3xl mx-auto", children: "LicencePro Advisory aims to simplify RTO processes with their comprehensive services and expert support" })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-6 mb-16", children: stats.map((stat, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-gold/20 text-center p-6 hover:shadow-lg transition-shadow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-0", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-dark rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(stat.icon, { className: "h-8 w-8 text-gold" }) }),
