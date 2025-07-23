@@ -1,5 +1,6 @@
 import { Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
             <div className="flex items-center gap-6 mb-2 md:mb-0">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-gold" />
-                <span>info@licenceproadvisory.com</span>
+                <span>licenceproadvisory@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-gold" />
@@ -31,7 +32,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-4">
             <img 
-              src="/lovable-uploads/e3394be8-391e-4274-8d85-8642c9706e5a.png" 
+              src={logo} 
               alt="LicencePro Advisory" 
               className="h-12 w-auto"
             />
