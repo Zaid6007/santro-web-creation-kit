@@ -17101,7 +17101,7 @@ const Header = () => {
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "h-4 w-4 shiny-gold-text" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium", children: "For Assistance Call Us: +91 9513144363" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium", children: "For Assistance Call Us: +91 8884008902" })
       ] })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between py-4", children: [
@@ -17697,7 +17697,7 @@ const Contact = () => {
             "Phone"
           ] }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-2xl font-bold text-gold", children: "+91 9513144363" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-2xl font-bold text-gold", children: "+91 8884008902" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Call us for immediate assistance" })
           ] }) })
         ] }),
@@ -17707,7 +17707,7 @@ const Contact = () => {
             "Email"
           ] }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold", children: "info@licenceproadvisory.com" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-semibold", children: "licenceproadvisory@gmail.com" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground", children: "Send us your queries" })
           ] }) })
         ] }),
@@ -17799,11 +17799,11 @@ const Footer = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "h-5 w-5 text-gold" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 9513144363" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 8884008902" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "h-5 w-5 text-gold" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "info@licenceproadvisory.com" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "licenceproadvisory@gmail.com" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "h-5 w-5 text-gold" }),

@@ -560,9 +560,10 @@ video {
 .shiny-gold-text {
   background: linear-gradient(
     90deg,
-    #FFD700,
-    #FFA500,
-    #FFEC8B
+    #F9F295,
+    #E0AA3E,
+    #FAF398,
+    #B88A44
   );
   background-size: 100%;
   color: transparent;
@@ -2122,9 +2123,10 @@ All colors MUST be HSL.
 .hover\:shiny-gold-text:hover {
   background: linear-gradient(
     90deg,
-    #FFD700,
-    #FFA500,
-    #FFEC8B
+    #F9F295,
+    #E0AA3E,
+    #FAF398,
+    #B88A44
   );
   background-size: 100%;
   color: transparent;
