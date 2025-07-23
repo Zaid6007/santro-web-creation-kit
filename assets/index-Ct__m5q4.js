@@ -17183,7 +17183,7 @@ const CardFooter = reactExports.forwardRef(({ className, ...props }, ref) => /* 
   }
 ));
 CardFooter.displayName = "CardFooter";
-const heroCar = "/santro-web-creation-kit/assets/Car-862xYFI6.png";
+const heroCar = "/santro-web-creation-kit/assets/Car-DMuD1xwv.png";
 const roadBackground = "/santro-web-creation-kit/assets/road-background-DNduGMQH.jpg";
 const Hero = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "home", className: "relative bg-gradient-to-br from-dark via-dark-light to-dark-medium text-white overflow-hidden", children: [
@@ -17207,7 +17207,7 @@ const Hero = () => {
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-medium tracking-wider uppercase", children: "Trusted RTO Services" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-5xl lg:text-6xl font-bold leading-tight", children: [
-            "Bangalore's",
+            "BANGALORE's",
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "block shiny-gold-text", children: "FINEST RTO" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "block", children: "ADVISORY" })
           ] }),
