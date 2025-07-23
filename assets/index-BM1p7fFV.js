@@ -17120,10 +17120,10 @@ const Header = () => {
         ] })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "hidden md:flex items-center gap-8", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#home", className: "hover:shiny-gold-text transition-colors", children: "Home" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#services", className: "hover:shiny-gold-text transition-colors", children: "Services" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#about", className: "hover:shiny-gold-text transition-colors", children: "About Us" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#contact", className: "hover:shiny-gold-text transition-colors", children: "Contact" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#home", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "Home" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#services", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "Services" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#about", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "About Us" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#contact", className: "text-gold hover:shiny-gold-text transition-all duration-500", children: "Contact" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { className: "bg-gold hover:bg-gold-dark text-dark font-semibold", children: "Get Quote" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { variant: "ghost", className: "md:hidden shiny-gold-text", children: "☰" })
@@ -17220,19 +17220,19 @@ const Hero = () => {
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4 pt-8", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheckBig, { className: "h-8 w-8 shiny-gold-text mx-auto mb-2" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheckBig, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Legal Processing" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "h-8 w-8 shiny-gold-text mx-auto mb-2" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Fast Service" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "h-8 w-8 shiny-gold-text mx-auto mb-2" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "Expert Guidance" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-dark-light border-gold/20 p-4 text-center", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Shield, { className: "h-8 w-8 shiny-gold-text mx-auto mb-2" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Shield, { className: "h-8 w-8 text-gold mx-auto mb-2" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-gray-300", children: "No Hidden Charges" })
           ] })
         ] })
