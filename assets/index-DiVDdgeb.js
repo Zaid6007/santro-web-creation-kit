@@ -17183,7 +17183,7 @@ const CardFooter = reactExports.forwardRef(({ className, ...props }, ref) => /* 
   }
 ));
 CardFooter.displayName = "CardFooter";
-const heroCar = "/santro-web-creation-kit/assets/Car-Dqws93uy.png";
+const heroCar = "/santro-web-creation-kit/assets/Car-DWpTQkb1.png";
 const roadBackground = "/santro-web-creation-kit/assets/road-background-DNduGMQH.jpg";
 const Hero = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "home", className: "relative bg-gradient-to-br from-dark via-dark-light to-dark-medium text-white overflow-hidden", children: [
